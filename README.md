@@ -1,5 +1,6 @@
 # Space Shooter (Marine Edition)
 
+
 ## Управління
 
 | Клавіша | Дія |
