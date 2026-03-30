@@ -29,11 +29,16 @@ class SpaceShooter(QWidget):
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_A:
-            self.player.translate(-20, 0)
+            if self.player.left() > 0:
+                self.player.translate(-20, 0)
+
         elif event.key() == Qt.Key_D:
-            self.player.translate(20, 0)
+            if self.player.right() < WIDTH:
+                self.player.translate(20, 0)
+
         elif event.key() == Qt.Key_Space:
             self.shoot()
+
         elif event.key() == Qt.Key_R and self.game_over:
             self.reset_game()
 
