@@ -47,4 +47,3 @@ project/
 ├── game.py        
 └── README.md
 ```
-
