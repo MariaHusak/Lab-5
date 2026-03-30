@@ -32,7 +32,6 @@ class SpaceShooter(QWidget):
             if self.player.left() > 0:
                 self.player.translate(-20, 0)
 
-
         elif event.key() == Qt.Key_D:
             if self.player.right() < WIDTH:
                 self.player.translate(20, 0)
